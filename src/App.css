@@ -109,6 +109,7 @@
 }
 .button-box button:first-child{
   background: #FFCD7D;
+  color: #000;
 }
 
 .button-box button:last-child{
@@ -148,4 +149,13 @@ ul li{
 
 .log h2{
   color: #FFCD7D;
+}
+
+.github{
+  margin-top: 30px;
+}
+
+.github a{
+  text-decoration: underline;
+  cursor: pointer;
 }

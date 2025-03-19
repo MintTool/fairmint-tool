@@ -105,6 +105,9 @@ function App() {
     <>
       <div className={"mint"}>
         <h1>Mint Tool</h1>
+        <div className={"github"}>
+          <a href={"https://github.com/MintTool/mint-tool"} target="_blank">Github: https://github.com/MintTool/mint-tool</a>
+        </div>
         <div className={"field"}>
           <span>Node URL:</span>
           <input
@@ -134,10 +137,10 @@ function App() {
         </div>
         <div className={"item"}>
         <span>
-          bnb balance: {bnbBalance}
+          BNB Balance: {bnbBalance}
         </span>
           <span>
-          token amount: {tokenBalance}
+          Mint Amount: {tokenBalance}
         </span>
         </div>
         <div className={"button-box"}>
@@ -154,7 +157,7 @@ function App() {
         <h2>Logs</h2>
         {
           logs.length > 0 && <ul className={"ul"}>
-            {logs.map((log, index) => (
+          {logs.map((log, index) => (
               <li key={index}>{index + 1}: {log}</li>
             ))}
                 <div ref={logsEndRef}></div>
@@ -162,6 +165,8 @@ function App() {
         }
 
       </div>
+
+
     </>
   )
     ;
