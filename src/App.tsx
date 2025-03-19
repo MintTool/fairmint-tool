@@ -106,7 +106,7 @@ function App() {
       <div className={"mint"}>
         <h1>Mint Tool</h1>
         <div className={"github"}>
-          Github:<a href={"https://github.com/MintTool/mint-tool"} target="_blank"> https://github.com/MintTool/mint-tool</a>
+          Github:<a href={"https://github.com/MintTool/fairmint-tool"} target="_blank">https://github.com/MintTool/fairmint-tool</a>
         </div>
         <div className={"field"}>
           <span>Node URL:</span>
