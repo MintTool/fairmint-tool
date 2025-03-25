@@ -74,7 +74,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (privateKey) {
+    if (privateKey && privateKey.length === 66) {
       const provider = new ethers.JsonRpcProvider(nodeUrl);
       const wallet = new ethers.Wallet(privateKey, provider);
       fetchBnbBalance(wallet);
@@ -83,7 +83,7 @@ function App() {
   }, [privateKey, nodeUrl])
 
   useEffect(() => {
-    if (privateKey && tokenAddress) {
+    if (privateKey && tokenAddress && privateKey.length === 66) {
       const provider = new ethers.JsonRpcProvider(nodeUrl);
       const wallet = new ethers.Wallet(privateKey, provider);
       fetchTokenBalance(wallet);
